@@ -1,0 +1,82 @@
+<LinearLayout
+    android:id="@+id/llFilterForDP"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_horizontal_margin"
+    tools:context="com.lemhell.beziercollage.FilterActivity"
+    android:orientation="vertical"
+    android:background="@color/grey">
+
+    <FrameLayout
+        android:id="@+id/frameLayoutFilter"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="30">
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="5dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:background="@color/lightBar">
+        <ImageButton
+            android:id="@+id/ibtnFilters"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="ibtnFilters"
+            android:src="@drawable/btn_effects_on2x" />
+        <ImageButton
+            android:id="@+id/ibtnBrightness"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="ibtnBrightness"
+            android:src="@drawable/brightness_off2x" />
+        <ImageButton
+            android:id="@+id/ibtnContrast"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="ibtnContrast"
+            android:src="@drawable/contrast_off2x" />
+        <ImageView
+            android:id="@+id/ivTest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/darkBar">
+        <HorizontalScrollView
+            android:layout_marginTop="20dp"
+            android:id="@+id/hsvFilters"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="invisible">
+            <LinearLayout
+                android:id="@+id/llFilters"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            </LinearLayout>
+        </HorizontalScrollView>
+        <SeekBar
+            android:id="@+id/seekBarBrightness"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="invisible" />
+        <SeekBar
+            android:id="@+id/seekBarContrast"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="invisible" />
+    </FrameLayout>
+</LinearLayout>

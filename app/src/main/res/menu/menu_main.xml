@@ -1,0 +1,41 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.lemhell.beziercollage.MainActivity">
+
+    <item
+        android:id="@+id/action_resetPoints"
+        android:title="@string/resetPoints"
+        android:icon="@drawable/reset"
+        android:orderInCategory="4"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/menuItemGoToTemplate"
+        android:title="@string/Back"
+        app:showAsAction="always"
+        android:onClick="menuGoToTemplate"
+        android:orderInCategory="0"
+        android:icon="@drawable/abc_ic_ab_back_mtrl_am_alpha"/>
+    <item
+        android:id="@+id/menuItemShare"
+        app:showAsAction="always"
+        android:actionProviderClass="android.widget.ShareActionProvider"
+        android:icon="@drawable/abc_ic_menu_share_mtrl_alpha"
+        android:onClick="menuShareOnClick"
+        android:orderInCategory="2"
+        android:title="Share"/>
+    <item
+        android:icon="@drawable/question_mark"
+        android:id="@+id/action_tutorial"
+        android:title="@string/tutorial"
+        app:showAsAction="always"
+        android:orderInCategory="3"
+        android:onClick="btnStartTutorial"/>
+    <item
+        android:id="@+id/action_save"
+        android:orderInCategory="1"
+        android:icon="@drawable/save"
+        android:title="Save collage"
+        app:showAsAction="always"
+        android:onClick="btnSaveCollage"/>
+</menu>

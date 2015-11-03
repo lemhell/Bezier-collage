@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.lemhell.beziercollage" >
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/icon"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="com.lemhell.beziercollage.MainActivity"
+            android:label="@string/title_activity_main">
+        </activity>
+        <activity
+            android:name="com.lemhell.beziercollage.TemplateActivity"
+            android:label="@string/title_activity_template">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".FilterActivity_"
+            android:label="@string/title_activity_filter">
+        </activity>
+
+    </application>
+
+</manifest>

@@ -1,0 +1,33 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.lemhell.beziercollage.FilterActivity">
+
+    <item
+        android:id="@+id/menuItemGoToMain"
+        android:title="@string/Back"
+        app:showAsAction="always"
+        android:orderInCategory="0"
+        android:icon="@drawable/abc_ic_ab_back_mtrl_am_alpha"
+        android:onClick="menuGoToMain" />
+    <item
+        android:id="@+id/menuItemGoToMainWithoutChanges"
+        android:title="@string/Back"
+        app:showAsAction="always"
+        android:orderInCategory="0"
+        android:icon="@drawable/abc_ic_clear_mtrl_alpha"
+        android:onClick="menuGoToMainWithoutChanges" />
+    <item
+        android:id="@+id/menuItemShare"
+        android:title="@string/share"
+        android:icon="@drawable/abc_ic_menu_share_mtrl_alpha"
+        app:showAsAction="always"
+        android:actionProviderClass="android.widget.ShareActionProvider"
+        android:onClick="menuShareOnClick"/>
+    <item
+        android:icon="@drawable/question_mark"
+        android:id="@+id/action_tutorial"
+        android:title="@string/tutorial"
+        app:showAsAction="ifRoom"
+        android:onClick="btnStartTutorialFilter"/>
+</menu>

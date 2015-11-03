@@ -1,0 +1,85 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="16dp"
+    tools:context="com.lemhell.beziercollage.MainActivity"
+    android:id="@+id/llMain"
+    android:orientation="vertical"
+    android:background="@color/grey">
+
+    <RelativeLayout
+        android:id="@+id/rlMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_gravity="center"
+        android:paddingBottom="16dp"
+        >
+        <ImageView
+            android:id="@+id/ivFrame"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            android:src="@drawable/empty_frame"
+            />
+
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rvMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/lightBar"
+        >
+
+    </android.support.v7.widget.RecyclerView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:background="@color/darkBar"
+        android:paddingTop="1dp"
+        android:paddingBottom="1dp">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingRight="5dp"
+            android:orientation="vertical">
+            <ImageView
+                android:id="@+id/ivButtonFrames"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="btnAddFrame"/>
+            <TextView
+                android:text="@string/selectFrame"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textColor="@color/white"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="5dp"
+            android:orientation="vertical">
+            <ImageView
+                android:id="@+id/ivButtonStickers"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="btnAddTextSticker"/>
+            <TextView
+                android:text="@string/addSticker"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textColor="@color/white"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

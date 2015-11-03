@@ -1,0 +1,53 @@
+<resources>
+    <string name="app_name">Bezier Collage</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="getPic">Get picture</string>
+    <string name="getPic1">Get picture 1</string>
+    <string name="getPic2">Get picture 2</string>
+    <string name="getPic3">Get picture 3</string>
+    <string name="getPic4">Get picture 4</string>
+    <string name="action_getPic">Get pic</string>
+    <string name="action_setFocus">Set focus</string>
+    <string name="action_closeFocusBar">Close focus action menu</string>
+    <string name="action_editPic">Edit picture</string>
+    <string name="btnReturnToMain">Return to collage</string>
+    <string name="btnSaveAndReturn">Save</string>
+    <string name="share">Share</string>
+    <string name="title_activity_filter">Filters</string>
+    <string name="Borders">Set border</string>
+    <string name="title_activity_template">@string/app_name</string>
+    <string name="resetPoints">Reset points</string>
+
+    <string name="ok">OK</string>
+    <string name="staticText">Static collages:</string>
+    <string name="dynamicText">Dynamic collages:</string>
+    <string name="Back">Back</string>
+    <string name="addSticker">Text</string>
+    <string name="selectFrame">Frames</string>
+    <string name="tutorial">Start tutorial</string>
+    <string name="showcase_button_ok">Next</string>
+    <string name="title_activity_main">@string/app_name</string>
+    <string name="templateText">Choose template for the collage</string>
+    <string name="bezierCollage">BEZIER COLLAGE</string>
+
+    <color name="black">        #000</color>
+    <color name="red">          #F00</color>
+    <color name="white">        #FFF</color>
+    <color name="blue">         #00F</color>
+    <color name="green">        #0F0</color>
+    <color name="yellow">       #FF0</color>
+    <color name="magenta">      #F0F</color>
+    <color name="cyan">         #0FF</color>
+
+    <color name="orange">       #FFA500</color>
+
+    <color name="darkBar">      #262626</color>
+    <color name="lightBar">     #2A2A2A</color>
+    <color name="blueBarText">  #3498DB</color>
+
+    <color name="grey">         #888</color>
+
+    <color name="showcase_background">  #888800</color>
+</resources>
